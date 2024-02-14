@@ -2,3 +2,4 @@
 .env
 store
 venv
+__pycache__
