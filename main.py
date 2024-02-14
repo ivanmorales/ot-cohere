@@ -54,8 +54,8 @@ query_engine = index.as_query_engine(
 @click.command()
 @click.option('--question', prompt="Ask me anything")
 def query(question):
-  print("--------------------------------")
-  print(query_engine.query(question))
+  click.secho('____________________', fg="green")
+  click.secho(query_engine.query(question), fg="red")
 
   query()
 
